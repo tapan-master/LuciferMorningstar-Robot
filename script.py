@@ -1,18 +1,18 @@
 class Script(object):
-    START_TXT = """Hello {},
+    START_TXT = """Hello 👋 {},
 
-My name is <a href=https://t.me/{}>{}</a>!
+I Am Not Only <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</a> To Assist You But Also Employed At <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> Group By <a href="https://t.me/hellodragan">Dragon</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉
 
-<b>I can provide Movies. A Telegram Auto Filter Bot. Its Easy To Use Me :)
+Better You Click Below & Join <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> & Feel The Experience Of Downloading Unlimited Movies/ Series ✅
 
-Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
+For More Information Click ℹ️ Help"""
+    
+    HELP_TXT = """Hello 👋 {}, 
 
-    HELP_TXT = """Hey {}
-
-<b>Here Is The Help For My Commands.</b>"""
+<b>I can Guide You Through All Of Film District Bot's Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
 
     ABOUT_TXT = """<b>➥ My name: {}
-➥ Creator: <a href='https://t.me/zautekm'>Zaute Km</a>
+➥ Creator: <a href='https://t.me/hellodragan'>Dragon</a>
 ➥ Library: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
 ➥ Language: Python 𝟹
 ➥ Data Base: <a href='https://www.mongodb.com/'>MongoDB</a>
