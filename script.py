@@ -1,15 +1,15 @@
 class Script(object):
-    START_TXT = """<b>Hello 👋 {},
+    START_TXT = """<b>Hello 👋 {},</b>
 
-I Am Not Only <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</b> To Assist You But Also Employed At <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> Group By <a href="https://t.me/hellodragan">Dragon</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉
+<b>I Am Not Only <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</b> To Assist You But Also Employed At <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> Group By <a href="https://t.me/hellodragan">Dragon</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉
 
 Better You Click Below & Join <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> & Feel The Experience Of Downloading Unlimited Movies/ Series ✅
 
 For More Information Click ℹ️ Help</b>"""
     
-    HELP_TXT = """<b>Hello 👋 {}, 
+    HELP_TXT = """<b>Hello 👋 {},</b>
 
-I can Guide You Through All Of <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</b>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
+<b>I can Guide You Through All Of <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</b>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
 
     ABOUT_TXT = """<b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/hellodragan'>Dragon</a>
