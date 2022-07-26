@@ -34,7 +34,7 @@ Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 
 - Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. IMDb should have admin privillage.
+1. Movie Hub should have admin privillage.
 2. Only admins can add filters in a chat.
 3. Alert buttons have a limit of 64 characters.
 
@@ -44,13 +44,13 @@ Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 
 • /del - delete a specific filter in chat.
 • /delall - delete the whole filters in a chat (chat owner only)."""
 
-    BUTTON_TXT = """Help: <b>Buttons</b>
+    BUTTON_TXT = """<b>Buttons</b>
 
 - tgmoviebot support both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. IMDb supports buttons with any telegram media type.
+2. Movie Hub supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format.
 
 <b>URL buttons:</b>
@@ -59,7 +59,7 @@ Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
 
-    FILLINGS_TXT = """Help: <b>Fillings</b>
+    FILLINGS_TXT = """<b>Fillings</b>
 
 You can also customise the contents of your message with contextual data. For example, you could mention a user by name in the filter message, or mention them in a filter!
 
@@ -78,7 +78,7 @@ You can also customise the contents of your message with contextual data. For ex
 -> <code>/filter test Hello {mention} This Is your Username : {username} And This Is your ID : {id}.</code>
 """
 
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+    AUTOFILTER_TXT = """<b>Auto Filter</b>
 
 <b>NOTE:</b>
 1. Make me the admin of your channel if it's private.
@@ -86,7 +86,7 @@ You can also customise the contents of your message with contextual data. For ex
 3. Forward the last message to me with quotes.
  I'll add all the files in that channel to my db."""
 
-    CONNECTION_TXT = """Help: <b>Connections</b>
+    CONNECTION_TXT = """<b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
 - It helps to avoid spamming in groups.
@@ -100,11 +100,11 @@ You can also customise the contents of your message with contextual data. For ex
 • /disconnect  - disconnect from a chat.
 • /connections - list all your connections."""
 
-    AUTO_MANUAL_TXT = """Help: <b>Filters</b>
+    AUTO_MANUAL_TXT = """<b>Filters</b>
 
 <b>Select a filters type Below:</b>"""
 
-    PASTE_TXT = """Help: <b>Paste</b>
+    PASTE_TXT = """<b>Paste</b>
 
 Paste some texts or documents on a website!
 
@@ -113,11 +113,11 @@ Paste some texts or documents on a website!
 • /paste [reply] - paste the replied text on Pasty
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    TGRAPH_TXT = """Help: <b>TGraph & Paste</b>
+    TGRAPH_TXT = """<b>TGraph & Paste</b>
 
 Do as you wish with telegra.ph module!
 
@@ -125,11 +125,11 @@ Do as you wish with telegra.ph module!
 • /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph.
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    INFO_TXT = """Help: <b>Information</b>
+    INFO_TXT = """<b>Information</b>
 
 Get information about something!
 
@@ -139,21 +139,21 @@ Get information about something!
 • /json - get the json details of a message.
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    TORRENT_TXT = """Help: <b>Torrent Search</b>
+    TORRENT_TXT = """<b>Torrent Search</b>
 
 <b>Commands and Usage:</b>
 • /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    GTRANS_TXT = """Help: <b>Google Translator</b>
+    GTRANS_TXT = """<b>Google Translator</b>
 
 Translate texts to a specific language!
 
@@ -161,11 +161,11 @@ Translate texts to a specific language!
 • /tr [language code][reply] - translate replied message to specific language.
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
-• IMDb can translate texts to 200+ languages."""
+• Movie Hub can translate texts to 200+ languages."""
 
-    SEARCH_TXT = """Help: <b>IMDb</b>
+    SEARCH_TXT = """<b>IMDb</b>
 
 Search many things without leaving telegram!
 
@@ -174,11 +174,11 @@ Search many things without leaving telegram!
 • /search  - get the film information from various sources.
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • More search tools can be found on inline.
 • Those commands works on both pm and group."""
 
-    PURGE_TXT = """Help: <b>Purge</b>
+    PURGE_TXT = """<b>Purge</b>
 
 Need to delete lots of messages? That's what purges are for!
 
@@ -186,11 +186,11 @@ Need to delete lots of messages? That's what purges are for!
 • /purge - delete all messages from the replied to message, to the current message.
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on group.
 • These commands can be used by Only admin."""
 
-    RESTRIC_TXT = """Help: <b>Restrictions</b>
+    RESTRIC_TXT = """<b>Restrictions</b>
 
 Some people need to be publicly banned; spammers, annoyances, or just trolls.
 
@@ -208,11 +208,11 @@ This module allows you to do that easily, by exposing some common actions, so ev
 -> <code>/tmute @username 2h</code>
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on group.
 • These commands can be used by Only admin."""
 
-    PIN_MESSAGE_TXT = """Help: <b>Pin Message</b>
+    PIN_MESSAGE_TXT = """<b>Pin Message</b>
 
 All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!
 
@@ -221,11 +221,11 @@ All the pin related commands can be found here; keep your chat up to date on the
 • /unpin: Unpin the current pinned message. If used as a reply, unpins the replied to message.
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works only group.
 • These commands can be used by Only admin."""
 
-    ADMIN_TXT = """Help: <b>Admin Mods</b>
+    ADMIN_TXT = """<b>Admin Mods</b>
 
 <b>NOTE:</b>
 This module only works for my admins
@@ -255,7 +255,7 @@ __🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have T
 
 **👇 JOIN THIS CHANNEL & TRY AGAIN 👇**"""
 
-    MEMES_TXT = """Help: <b>Memes</b>
+    MEMES_TXT = """<b>Memes</b>
 
 Some dank memes for fun or whatever!
 
@@ -267,11 +267,11 @@ Some dank memes for fun or whatever!
 • /runs strings
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    URL_SHORTNER_TXT = """Help: <b>URL Shortner</b>
+    URL_SHORTNER_TXT = """<b>URL Shortner</b>
 
 Some URLs is Shortner
 
@@ -282,11 +282,11 @@ Some URLs is Shortner
 <code>/short https://t.me/josprojects</code>
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    TTS_TXT = """Help: <b>Text to Speech</b>
+    TTS_TXT = """<b>Text to Speech</b>
 
 A module to convert text to voice with language support.
 
@@ -294,11 +294,11 @@ A module to convert text to voice with language support.
 • /tts - Reply to any text message with language code to convert as audio.
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    MUSIC_TXT = """Help: <b>Music</b>
+    MUSIC_TXT = """<b>Music</b>
 
 Music download modules, for those who love music.
 
@@ -311,11 +311,11 @@ Music download modules, for those who love music.
 <b>Example:</b> <code>/ytthumb https://youtu.be/h6PtzFYaMxQ</code>
 
 <b>NOTE:</b>
-• IMDb should have admin privillage.
+• Movie Hub should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    PASSWORD_GEN_TXT = """Help: <b>Password Generator</b>
+    PASSWORD_GEN_TXT = """<b>Password Generator</b>
 
 There Is Nothing To Know More. Send Me The Limit Of Your Password.
 - I Will Give The Password Of That Limit.
@@ -331,7 +331,7 @@ There Is Nothing To Know More. Send Me The Limit Of Your Password.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    SHARE_TXT = """Help: <b>Sharing Text Maker</b>
+    SHARE_TXT = """<b>Sharing Text Maker</b>
 
 a bot to create a link to share text in the telegram.
 
@@ -350,10 +350,10 @@ Added By - {}
 """
 
     LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
+🆔 - <code>{}</code>
 Name - {}"""
 
-    ZOMBIES_TXT = """Help: <b>Zombies</b>
+    ZOMBIES_TXT = """<b>Zombies</b>
 
 <b>Kick incative members from group. Add me as admin with ban users permission in group.</b>
 
