@@ -1,15 +1,15 @@
 class Script(object):
     START_TXT = """Hello 👋 {},
 
-<b>I Am Not Only <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</b> To Assist You But Also Employed At <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> Group By <a href="https://t.me/hellodragan">Dragon</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉
+I Am Not Only <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</b> To Assist You But Also Employed At <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> Group By <a href="https://t.me/hellodragan">Dragon</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉
 
 Better You Click Below & Join <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> & Feel The Experience Of Downloading Unlimited Movies/ Series ✅
 
 For More Information Click ℹ️ Help</b>"""
     
-    HELP_TXT = """Hello 👋 {},
+    HELP_TXT = """<b>Hello</b> 👋 {},
 
-<b>I can Guide You Through All Of <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</b>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
+<b>I can Guide You Through All Of</b> <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</b>'s <b>Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
 
     ABOUT_TXT = """<b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/hellodragan'>Dragon</a>
@@ -17,7 +17,7 @@ For More Information Click ℹ️ Help</b>"""
 ➥ Language: Python 𝟹
 ➥ Data Base: <a href='https://www.mongodb.com/'>MongoDB</a>
 ➥ Bot Server: <a href='https://heroku.com'>Heroku</a>
-➥ Build Status: v2.0.1 [ Beta ]"""
+➥ Build Status: v2.0.1 [ Beta ]</b>"""
 
     SOURCE_TXT = """<b>Source:</b>
 IMDb is a Open source project.
@@ -29,7 +29,7 @@ Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 
 <b>SUPPORT GROUP</b>
 - <a href='https://t.me/+y53tWFUw6Q43NzE9'>Jos Movie Club</a>"""
 
-    MANUALFILTER_TXT = """Help: <b>Filters</b>
+    MANUALFILTER_TXT = """<b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message
 
