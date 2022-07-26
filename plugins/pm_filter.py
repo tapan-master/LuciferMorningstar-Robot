@@ -380,8 +380,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-        buttons = 
-
+        buttons = [
+        [
+            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+        ],
+        [
+            InlineKeyboardButton('🗑 Close File', callback_data='close_data')
+        ]
+        ]
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
@@ -427,14 +434,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [
-            [
-                InlineKeyboardButton('⭕️ Support', url='https://t.me/JOSPSupport'),
-                InlineKeyboardButton('Channel ⭕️', url='https://t.me/JosProjects')
-            ],
-            [
-                InlineKeyboardButton('🎬 Series & Movie Club 🎬', url=f'https://t.me/+y53tWFUw6Q43NzE9')
-            ]
-            ]
+        [
+            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+        ],
+        [
+            InlineKeyboardButton('🗑 Close File', callback_data='close_data')
+        ]
+        ]
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
@@ -490,8 +497,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Adult Bot 🔞', url='https://t.me/AdultSearchXBot')
-        ]]
+           ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.HELP_TXT.format(query.from_user.mention),
@@ -500,10 +506,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('⭕ Status', url='https://t.me/josprojects/221'),
-            InlineKeyboardButton('Source 🪤', callback_data='source')
-            ],[
-            InlineKeyboardButton('❓ How to Use ❓', callback_data='help')
+            InlineKeyboardButton('🤖 Status', url='https://t.me/+tYcc1A2-W0ZhZTFl'),
             ],[
             InlineKeyboardButton('« Back', callback_data='start'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
