@@ -87,7 +87,7 @@ You can deploy this bot anywhere.
 [![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/Tech_Masters)
 
 ## Credits 
-* [![Dragon](https://img.shields.io/static/v1?label=Dingdi-Dev&message=devs&color=critical)](https://t.me/hellodragan)
+* [![Dragon](https://img.shields.io/static/v1?label=Dragon&message=dev&color=critical)](https://t.me/hellodragan)
 
 ## Disclaimer
 [![GNU Affero General Public License 3.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
