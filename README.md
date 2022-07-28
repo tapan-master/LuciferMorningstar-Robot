@@ -39,7 +39,6 @@
 * `FILE_STORE_CHANNEL`: Channel from were file store links of posts should be made. Separate multiple IDs by space
 * Check [info.py](info.py) for more
 ```
-```
 ## Deploy
 You can deploy this bot anywhere.
 
@@ -54,7 +53,7 @@ You can deploy this bot anywhere.
 </a>
 </p>
 </details>
-```
+
 ## Admin commands
 ```
 • /logs - to get the rescent errors
@@ -83,18 +82,14 @@ You can deploy this bot anywhere.
 • /channel - to get list of total connected channels
 • /broadcast - to broadcast a message to all Eva Maria users
 ```
-```
 ## Support
 [![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://telegram.dog/Tech_Masters2022)
 [![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/Tech_Masters)
-```
-```
+
 ## Credits 
 * [![Dragon](https://img.shields.io/static/v1?label=Dingdi-Dev&message=devs&color=critical)](https://t.me/hellodragan)
-```
-```
+
 ## Disclaimer
 [![GNU Affero General Public License 3.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
 Licensed under [GNU AGPL 3.0.](https://github.com/ZauteKm/Dingdi/blob/master/LICENSE)
 Selling The Codes To Other People For Money Is *Strictly Prohibited*.
-```
