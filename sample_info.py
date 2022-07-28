@@ -18,7 +18,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://img4.goodfon.com/original/1920x1200/6/e1/devushka-vzgliad-stul.jpg https://img4.goodfon.com/original/1920x1200/f/1c/jack-russell-model-litso-ruka-postel.jpg https://img4.goodfon.com/original/2560x1600/c/30/kirill-zakirov-model-poza-plate-nogi-kreslo-okno-stil.jpg https://img4.goodfon.com/original/1920x1200/f/4d/alexis-monroe-devushka-blondinka-krasotka-seksualnaia-privle.jpg https://img5.goodfon.com/original/2560x1600/d/a8/oleg-klimin-model-blondinka-krasotka-seksi-sidit-poza-figura.jpg')).split()
 
 # Admins, Channels & Users
