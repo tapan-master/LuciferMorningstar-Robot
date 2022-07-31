@@ -9,7 +9,7 @@ class Script(object):
     
     HELP_TXT = """<b>Hello 👋 {},</b>
 
-<b>I can Guide You Through All Of</b> <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</a>'s <b>Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
+<b>I can Guide You Through All Of <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</a>'s <b>Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
 
     ABOUT_TXT = """<b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/hellodragan'>Dragon</a>
@@ -29,29 +29,29 @@ Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 
 <b>SUPPORT GROUP</b>
 - <a href='https://t.me/+y53tWFUw6Q43NzE9'>Jos Movie Club</a>"""
 
-    MANUALFILTER_TXT = """<b>Filters</b>
+    MANUALFILTER_TXT = """<b>Filters
 
-- Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message
+- Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message.</b>
 
-<b>NOTE:</b>
+<b>NOTE:
 1. Movie Hub should have admin privillage.
 2. Only admins can add filters in a chat.
-3. Alert buttons have a limit of 64 characters.
+3. Alert buttons have a limit of 64 characters.</b>
 
-<b>Commands and Usage:</b>
+<b>Commands and Usage:
 • /filter - add a filter in chat.
 • /filters - list all the filters of a chat.
 • /del - delete a specific filter in chat.
-• /delall - delete the whole filters in a chat (chat owner only)."""
+• /delall - delete the whole filters in a chat (chat owner only).</b>"""
 
-    BUTTON_TXT = """<b>Buttons</b>
+    BUTTON_TXT = """<b>Buttons
 
-- tgmoviebot support both url and alert inline buttons.
+- tgmoviebot support both url and alert inline buttons.</b>
 
-<b>NOTE:</b>
+<b>NOTE:
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
 2. Movie Hub supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format.
+3. Buttons should be properly parsed as markdown format.</b>
 
 <b>URL buttons:</b>
 <code>[Button Text](buttonurl:https://t.me/josprojects)</code>
