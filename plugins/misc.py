@@ -159,12 +159,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
                     url=imdb['url'],
                 )
             ],
-            [
-                InlineKeyboardButton(
-                    text=f"Projects Channel",
-                    url="https://t.me/josprojects"
-                )
-            ],
+            
         ]
     message = quer_y.message.reply_to_message or quer_y.message
     if imdb:
@@ -199,7 +194,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             **locals()
         )
     else:
-        caption = "No Results"
+        caption = "No Results Found"
     if imdb.get('poster'):
         try:
             await quer_y.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
