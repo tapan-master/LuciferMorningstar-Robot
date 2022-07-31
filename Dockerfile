@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /Technical-Masters
-WORKDIR /Technical-Masters
+RUN mkdir /TG-Dragon 
+WORKDIR /TG-Dragon 
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
