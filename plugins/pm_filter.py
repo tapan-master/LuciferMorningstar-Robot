@@ -374,15 +374,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             try:
                 f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
             
-        buttons = [
-        [
-            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
-        ],
-        [
-            InlineKeyboardButton('🗑 Close File', callback_data='close_data')
-        ]
-        ]
+        buttons = [[
+                  InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+                  InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+                  ],[
+                  InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
+
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
@@ -420,11 +417,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
                 
                  buttons = [[
-        
-                   InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-                   InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
-                   ],[
-                   InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
+                           InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+                           InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+                           ],[
+                           InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
         
         await query.answer()
         await client.send_cached_media(
