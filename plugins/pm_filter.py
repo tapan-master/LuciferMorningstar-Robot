@@ -375,8 +375,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
             except Exception as e:
                 logger.exception(e)
-            f_caption = f_caption
-        if f_caption is None:
+            f_caption = f_captio
+            f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [
         [
@@ -426,7 +426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
                 logger.exception(e)
                 f_caption = f_caption
-        if f_caption is None:
+                f_caption is None:
             f_caption = f"{title}"
         buttons = [
         [
