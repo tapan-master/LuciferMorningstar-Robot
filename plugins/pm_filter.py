@@ -372,13 +372,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         settings = await get_settings(query.message.chat.id)
         if CUSTOM_FILE_CAPTION:
             try:
-                f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
+                 caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
             
-        buttons = [[
-                  InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-                  InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
-                  ],[
-                  InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
+                  buttons = [[
+                            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+                            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+                            ],[
+                            InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
