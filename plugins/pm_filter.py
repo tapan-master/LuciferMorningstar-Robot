@@ -372,10 +372,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         settings = await get_settings(query.message.chat.id)
         if CUSTOM_FILE_CAPTION:
             try:
-                f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
+                f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
             except Exception as e:
                 logger.exception(e)
-            f_caption = f_captio
+            f_caption = f_caption
             f_caption = f"{files.file_name}"
         buttons = [
         [
@@ -422,10 +422,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         f_caption = files.caption
         if CUSTOM_FILE_CAPTION:
             try:
-                f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
+                f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
                 logger.exception(e)
                 f_caption = f_caption
-            f_caption = f"{title}"
+            f_caption = f"{file_name}"
         buttons = [
         [
             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
