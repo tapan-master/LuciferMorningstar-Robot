@@ -419,22 +419,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
-        f_caption = files.caption
-        if CUSTOM_FILE_CAPTION:
-            try:
-                f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
-                logger.exception(e)
-                f_caption = f_caption
-            f_caption = f"{file_name}"
-        buttons = [
-        [
-            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
-        ],
-        [
-            InlineKeyboardButton('🗑 Close File', callback_data='close_data')
-        ]
-        ]
+        
+                caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
+                
+                 buttons = [[
+        
+                   InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+                   InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+                   ],[
+                   InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
+        
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
