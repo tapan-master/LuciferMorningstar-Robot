@@ -374,11 +374,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             try:
                  caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
             
-                  buttons = [[
+                  buttons = [
                             InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
                             InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
                             ],[
-                            InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
+                            InlineKeyboardButton('🗑 Close File', callback_data='close_data')]
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -416,11 +416,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
                 caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
                 
-                 buttons = [[
+                 buttons = [
                            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
                            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
                            ],[
-                           InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
+                           InlineKeyboardButton('🗑 Close File', callback_data='close_data')]
         
         await query.answer()
         await client.send_cached_media(
