@@ -47,9 +47,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('About 😎', callback_data='about')
-            ],[
-            InlineKeyboardButton('❎ Close ❎', callback_data='close_data')
-        ]]
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -90,9 +88,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('About 😎', callback_data='about')
-            ],[
-            InlineKeyboardButton('❎ Close ❎', callback_data='close_data')
-        ]]
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -238,15 +234,12 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
-    buttons = [
-        [
-            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
-        ],
-        [
-            InlineKeyboardButton('🗑 Close File', callback_data='close_data')
-        ]
-        ]
+    buttons = [[
+               InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+               InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+               ],[
+               InlineKeyboardButton('🗑 Close File', callback_data='close_data')
+               ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
