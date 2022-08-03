@@ -1,4 +1,4 @@
-# Kanged From @TroJanZheX
+# Kanged From @hellodragan 
 import asyncio
 import re
 import ast
@@ -372,13 +372,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         settings = await get_settings(query.message.chat.id)
         if CUSTOM_FILE_CAPTION:
             try:
-                 caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
-            
-                  buttons = [
-                            InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-                            InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
-                            ],[
-                            InlineKeyboardButton('🗑 Close File', callback_data='close_data')]
+                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
+                                                       file_size='' if size is None else size,
+                                                       file_caption='' if f_caption is None else f_caption)
+            except Exception as e:
+                logger.exception(e)
+            f_caption = f_caption
+        if f_caption is None:
+            f_caption = f"{files.file_name}"
+        buttons = [[
+                   InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+                   InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+                   ],[
+                   InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -413,14 +419,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
-        
-                caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=file_name, size=file_size, caption=files.caption)
-                
-                 buttons = [
-                           InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-                           InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
-                           ],[
-                           InlineKeyboardButton('🗑 Close File', callback_data='close_data')]
+        f_caption = files.caption
+        if CUSTOM_FILE_CAPTION:
+            try:
+                f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
+                                                       file_size='' if size is None else size,
+                                                       file_caption='' if f_caption is None else f_caption)
+            except Exception as e:
+                logger.exception(e)
+                f_caption = f_caption
+        if f_caption is None:
+            f_caption = f"{title}"
+        buttons = [[
+                   InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
+                   InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+                   ],[
+                   InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
         
         await query.answer()
         await client.send_cached_media(
