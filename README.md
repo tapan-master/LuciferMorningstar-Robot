@@ -20,7 +20,8 @@
 - [x] File Store
 ```
 ```
-### Required Variables
+## Required Variables
+
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
 * `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
@@ -32,6 +33,7 @@
 ```
 ```
 ### Optional Variables
+
 * `IMDB`: Imdb, the view of information when making True/False.
 * `SINGLE_BUTTON`: choose b/w [single or double buttons](https://github.com/josprojects/tgmoviebot/issues/1) True/False.
 * `P_TTI_SHOW_OFF`: Customize Result Buttons to Callback or Url by (True = url / False = callback).
