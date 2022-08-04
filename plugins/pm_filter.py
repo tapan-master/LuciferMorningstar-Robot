@@ -454,9 +454,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('About 😎', callback_data='about')
-            ],[
-            InlineKeyboardButton('❎ Close ❎', callback_data='close_data')
-        ]]
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -479,21 +477,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Pin', callback_data='pin'),
             InlineKeyboardButton('Purge', callback_data='purge'),
             ],[
-            InlineKeyboardButton('Restrict', callback_data='restric'),
-            InlineKeyboardButton('Search', callback_data='search'),
-            InlineKeyboardButton('Sudo', callback_data='admin'),
+            InlineKeyboardButton('🚫 Restrict', callback_data='restric'),
+            InlineKeyboardButton('🔍 IMDB', callback_data='search'),
+            InlineKeyboardButton('⚔️ Sudo', callback_data='admin'),
             ],[
-            InlineKeyboardButton('Share-Text', callback_data='sharetext'),
-            InlineKeyboardButton('TTS', callback_data='tts'),
+            InlineKeyboardButton('⬆️ Share', callback_data='sharetext'),
+            InlineKeyboardButton('🗣️ Speech', callback_data='tts'),
             InlineKeyboardButton('Torrent', callback_data='torrent'),
             ],[
-            InlineKeyboardButton('TGraph', callback_data='tgraph'),
-            InlineKeyboardButton('URL Short', callback_data='shortner'),
-            InlineKeyboardButton('YouTube', callback_data='music'),
+            InlineKeyboardButton('🖼️ TGraph', callback_data='tgraph'),
+            InlineKeyboardButton('🔗 URL Short', callback_data='shortner'),
+            InlineKeyboardButton(🎼 Song', callback_data='music'),
             ],[
-            InlineKeyboardButton('Zombies', callback_data='zombies'),
-            InlineKeyboardButton('« Back', callback_data='start'),
-           ]]
+            InlineKeyboardButton('👹 Zombies', callback_data='zombies'),
+            InlineKeyboardButton('🏠 Home', callback_data='start'),
+            InlineKeyboardButton('❎ Close', callback_data='close_data'),
+         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.HELP_TXT.format(query.from_user.mention),
