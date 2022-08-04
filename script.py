@@ -109,15 +109,15 @@ You can also customise the contents of your message with contextual data. For ex
 Paste some texts or documents on a website!
 
 <b>Commands and Usage:</b>
-• /paste [text] - paste the given text on Pasty
-• /paste [reply] - paste the replied text on Pasty
+• /paste [text] - paste the given text on Pasty.
+• /paste [reply] - paste the replied text on Pasty."""
 
     TGRAPH_TXT = """<b>TGraph & Paste</b>
 
 Do as you wish with telegra.ph module!
 
 <b>Commands and Usage:</b>
-• /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph.
+• /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph."""
 
     INFO_TXT = """<b>Information</b>
 
@@ -126,19 +126,19 @@ Get information about something!
 <b>Commands and Usage:</b>
 • /id - get id of a specified user.
 • /info  - get information about a user.
-• /json - get the json details of a message.
+• /json - get the json details of a message."""
 
     TORRENT_TXT = """<b>Torrent Search</b>
 
 <b>Commands and Usage:</b>
-• /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
+• /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource."""
 
     GTRANS_TXT = """<b>Google Translator</b>
 
 Translate texts to a specific language!
 
 <b>Commands and Usage:</b>
-• /tr [language code][reply] - translate replied message to specific language.
+• /tr [language code][reply] - translate replied message to specific language."""
 
     SEARCH_TXT = """<b>IMDb</b>
 
@@ -146,14 +146,14 @@ Search many things without leaving telegram!
 
 <b>Commands and Usage:</b>
 • /imdb  - get the film information from IMDb source.
-• /search  - get the film information from various sources.
+• /search  - get the film information from various sources."""
 
     PURGE_TXT = """<b>Purge</b>
 
 Need to delete lots of messages? That's what purges are for!
 
 <b>Commands and Usage:</b>
-• /purge - delete all messages from the replied to message, to the current message.
+• /purge - delete all messages from the replied to message, to the current message."""
 
     RESTRIC_TXT = """<b>Restrictions</b>
 
@@ -170,7 +170,7 @@ This module allows you to do that easily, by exposing some common actions, so ev
 
 <b>Examples:</b>
 - Mute a user for two hours.
--> <code>/tmute @username 2h</code>
+-> <code>/tmute @username 2h</code>"""
 
     PIN_MESSAGE_TXT = """<b>Pin Message</b>
 
@@ -178,7 +178,7 @@ All the pin related commands can be found here; keep your chat up to date on the
 
 <b>Commands and Usage:</b>
 • /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.
-• /unpin: Unpin the current pinned message. If used as a reply, unpins the replied to message.
+• /unpin: Unpin the current pinned message. If used as a reply, unpins the replied to message."""
 
     ADMIN_TXT = """<b>Admin Mods</b>
 
@@ -221,7 +221,7 @@ Some dank memes for fun or whatever!
 • /roll or /dice - roll the dice 
 • /goal or /shoot - to make a goal or shoot
 • /luck or /cownd - Spin the Lucky
-• /runs strings
+• /runs strings"""
 
     URL_SHORTNER_TXT = """<b>URL Shortner</b>
 
@@ -231,14 +231,14 @@ Some URLs is Shortner
 • /short <code>(link)</code> - I will send the shorted links.
 
 <b>Example:</b>
-<code>/short https://t.me/josprojects</code>
+<code>/short https://t.me/josprojects</code>"""
 
     TTS_TXT = """<b>Text to Speech</b>
 
 A module to convert text to voice with language support.
 
 <b>Commands and Usage:</b>
-• /tts - Reply to any text message with language code to convert as audio.
+• /tts - Reply to any text message with language code to convert as audio."""
 
     MUSIC_TXT = """<b>Music</b>
 
@@ -250,7 +250,7 @@ Music download modules, for those who love music.
 
 <b>YouTube Thumbnail Download</b>
 • /ytthumb (youtube link)
-<b>Example:</b> <code>/ytthumb https://youtu.be/h6PtzFYaMxQ</code>
+<b>Example:</b> <code>/ytthumb https://youtu.be/h6PtzFYaMxQ</code>"""
 
     PASSWORD_GEN_TXT = """<b>Password Generator</b>
 
@@ -269,10 +269,11 @@ There Is Nothing To Know More. Send Me The Limit Of Your Password.
 
     SHARE_TXT = """<b>Sharing Text Maker</b>
 
-a bot to create a link to share text in the telegram.
+A bot to create a link to share text in the telegram.
 
 <b>Commands and Usage:</b>
-• /share (text or reply to message)
+
+• /share (text or reply to message)"""
 
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
