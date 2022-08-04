@@ -9,7 +9,7 @@ class Script(object):
     
     HELP_TXT = """<b>Hello 👋 {},</b>
 
-<b>I can Guide You Through All Of <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</a>'s <b>Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
+<b>I can Guide You Through All Of <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
 
     ABOUT_TXT = """<b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/hellodragan'>Dragon</a>
@@ -112,22 +112,12 @@ Paste some texts or documents on a website!
 • /paste [text] - paste the given text on Pasty
 • /paste [reply] - paste the replied text on Pasty
 
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
     TGRAPH_TXT = """<b>TGraph & Paste</b>
 
 Do as you wish with telegra.ph module!
 
 <b>Commands and Usage:</b>
 • /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph.
-
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
 
     INFO_TXT = """<b>Information</b>
 
@@ -138,20 +128,10 @@ Get information about something!
 • /info  - get information about a user.
 • /json - get the json details of a message.
 
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
     TORRENT_TXT = """<b>Torrent Search</b>
 
 <b>Commands and Usage:</b>
 • /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
-
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
 
     GTRANS_TXT = """<b>Google Translator</b>
 
@@ -159,11 +139,6 @@ Translate texts to a specific language!
 
 <b>Commands and Usage:</b>
 • /tr [language code][reply] - translate replied message to specific language.
-
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• Movie Hub can translate texts to 200+ languages."""
 
     SEARCH_TXT = """<b>IMDb</b>
 
@@ -173,22 +148,12 @@ Search many things without leaving telegram!
 • /imdb  - get the film information from IMDb source.
 • /search  - get the film information from various sources.
 
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• More search tools can be found on inline.
-• Those commands works on both pm and group."""
-
     PURGE_TXT = """<b>Purge</b>
 
 Need to delete lots of messages? That's what purges are for!
 
 <b>Commands and Usage:</b>
 • /purge - delete all messages from the replied to message, to the current message.
-
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on group.
-• These commands can be used by Only admin."""
 
     RESTRIC_TXT = """<b>Restrictions</b>
 
@@ -207,11 +172,6 @@ This module allows you to do that easily, by exposing some common actions, so ev
 - Mute a user for two hours.
 -> <code>/tmute @username 2h</code>
 
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on group.
-• These commands can be used by Only admin."""
-
     PIN_MESSAGE_TXT = """<b>Pin Message</b>
 
 All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!
@@ -219,11 +179,6 @@ All the pin related commands can be found here; keep your chat up to date on the
 <b>Commands and Usage:</b>
 • /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.
 • /unpin: Unpin the current pinned message. If used as a reply, unpins the replied to message.
-
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works only group.
-• These commands can be used by Only admin."""
 
     ADMIN_TXT = """<b>Admin Mods</b>
 
@@ -249,11 +204,13 @@ This module only works for my admins
 <b>Used Storage:</b> <code>{}</code> MiB
 <b>Free Storage:</b> <code>{}</code> MiB"""
 
-    FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
+    FORCESUB_TXT = """**👋 Hello {},**
 
-__🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
+**You Have Not Subscribed To My Channel.** 
 
-**👇 JOIN THIS CHANNEL & TRY AGAIN 👇**"""
+**To View The File, Click On 📣 MOVIE TIME UPDATES 📣 Button & Join.** 
+
+**Then Click On The 🔄 Refresh 🔄 Button To Receive The File ✅**"""
 
     MEMES_TXT = """<b>Memes</b>
 
@@ -266,11 +223,6 @@ Some dank memes for fun or whatever!
 • /luck or /cownd - Spin the Lucky
 • /runs strings
 
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
     URL_SHORTNER_TXT = """<b>URL Shortner</b>
 
 Some URLs is Shortner
@@ -281,22 +233,12 @@ Some URLs is Shortner
 <b>Example:</b>
 <code>/short https://t.me/josprojects</code>
 
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
     TTS_TXT = """<b>Text to Speech</b>
 
 A module to convert text to voice with language support.
 
 <b>Commands and Usage:</b>
 • /tts - Reply to any text message with language code to convert as audio.
-
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
 
     MUSIC_TXT = """<b>Music</b>
 
@@ -310,11 +252,6 @@ Music download modules, for those who love music.
 • /ytthumb (youtube link)
 <b>Example:</b> <code>/ytthumb https://youtu.be/h6PtzFYaMxQ</code>
 
-<b>NOTE:</b>
-• Movie Hub should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
     PASSWORD_GEN_TXT = """<b>Password Generator</b>
 
 There Is Nothing To Know More. Send Me The Limit Of Your Password.
@@ -327,7 +264,6 @@ There Is Nothing To Know More. Send Me The Limit Of Your Password.
 • Only Digits Are Allowed
 • Maximum Allowed Digits Till 84 
 (I Can't Generate Passwords Above The Length 84)
-• IMDb should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
@@ -337,11 +273,6 @@ a bot to create a link to share text in the telegram.
 
 <b>Commands and Usage:</b>
 • /share (text or reply to message)
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
 
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
