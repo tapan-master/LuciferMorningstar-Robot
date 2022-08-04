@@ -487,7 +487,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🖼️ TGraph', callback_data='tgraph'),
             InlineKeyboardButton('🔗 URL Short', callback_data='shortner'),
-            InlineKeyboardButton(🎼 Song', callback_data='music'),
+            InlineKeyboardButton('🎼 Song', callback_data='music'),
             ],[
             InlineKeyboardButton('👹 Zombies', callback_data='zombies'),
             InlineKeyboardButton('🏠 Home', callback_data='start'),
