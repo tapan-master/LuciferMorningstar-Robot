@@ -204,7 +204,7 @@ This module only works for my admins
 <b>Used Storage:</b> <code>{}</code> MiB
 <b>Free Storage:</b> <code>{}</code> MiB"""
 
-    FORCESUB_TXT = """**👋 Hello {},**
+    FORCESUB_TXT = """**👋 Hello {mention},**
 
 **You Have Not Subscribed To My Channel.** 
 
@@ -231,7 +231,7 @@ Some URLs is Shortner
 • /short <code>(link)</code> - I will send the shorted links.
 
 <b>Example:</b>
-<code>/short https://t.me/josprojects</code>"""
+<code>/short https://t.me/motech</code>"""
 
     TTS_TXT = """<b>Text to Speech</b>
 
