@@ -1,15 +1,15 @@
 class Script(object):
-    START_TXT = """<b>Hello 👋 {},</b>
+    START_TXT = """<b>Hello👋 {mention},</b>
 
-<b>I Am Not Only <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</a> To Assist You But Also Employed At <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> Group By <a href="https://t.me/hellodragan">Dragon</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</b> 😉
+<b>I Am Not Only <a href='http://t.me/Itsuniquemovie_robot'>𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a> To Assist You But Also Employed <a href='https://t.me/Its_unique_movies_adda'>𝐈𝐭'𝐬 𝐔𝐍𝐈𝐐𝐔𝐄 𝐌𝐎𝐕𝐈𝐄𝐒</a> By <a href='https://t.me/MOVIE_HOUSE11'>Htan Yoj</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉</b>
 
-<b>Better You Click Below & Join <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> & Feel The Experience Of Downloading Unlimited Movies/Series</b> ✅
+<b>Better You Click Below & Join Online Movies Hub & Feel The Experience Of Downloading Unlimited Movies/ Series ✅</b>
 
-<b>For More Information Click ℹ️ Help</b>"""
+<b>For More Information Click ℹ️ Help</b>
     
     HELP_TXT = """<b>Hello 👋 {},</b>
 
-<b>I can Guide You Through All Of <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
+<b>I can Guide You Through All Of <a href="https://t.me/Itsuniquemovie_robot">Movie Hub Bot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
 
     ABOUT_TXT = """<b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/hellodragan'>Dragon</a>
@@ -46,11 +46,11 @@ Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 
 
     BUTTON_TXT = """<b>Buttons
 
-- tgmoviebot support both url and alert inline buttons.</b>
+- It's Unique Movies Bot support both url and alert inline buttons.</b>
 
 <b>NOTE:
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Movie Hub supports buttons with any telegram media type.
+2. It's Unique Movies Bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format.</b>
 
 <b>URL buttons:</b>
@@ -208,7 +208,7 @@ This module only works for my admins
 
 **You Have Not Subscribed To My Channel.** 
 
-**To View The File, Click On 📣 MOVIE TIME UPDATES 📣 Button & Join.** 
+**To View The File, Click On 📣 ITS UNIQUE MOVIES UPDATES 📣 Button & Join.** 
 
 **Then Click On The 🔄 Refresh 🔄 Button To Receive The File ✅**"""
 
