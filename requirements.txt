@@ -1,4 +1,4 @@
-git@github.com:TG-Dragon/LuciferMorningstar-Robot.git
+git+https://github.com/PR0FESS0R-99/pyrogram@inline-m
 tgcrypto==1.2.3
 pymongo[srv]==3.12.3
 motor==2.5.1
