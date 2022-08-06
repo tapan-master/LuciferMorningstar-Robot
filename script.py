@@ -7,7 +7,7 @@ class Script(object):
 
 <b>For More Information Click ℹ️ Help</b>
     
-    HELP_TXT = """<b>Hello 👋 {},</b>
+    HELP_TXT = """<b>Hello {},</b>
 
 <b>I can Guide You Through All Of <a href="https://t.me/Itsuniquemovie_robot">𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
 
