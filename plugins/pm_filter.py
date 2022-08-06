@@ -116,8 +116,8 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton("🎬 Movie", url="https://t.me/+8X7kGPo_fogzYTRl"),
-                InlineKeyboardButton("Series 🎥", url="https://t.me/+iVePgxkxvQ0yOTBl")
+                InlineKeyboardButton("🎬 Movies", url="https://t.me/+4yoDh0x8j80wOTVl"),
+                InlineKeyboardButton("Series 🎥", url="https://t.me/+oRO-NDOF4LU4ZjRl")
             ])
 
     btn.insert(0, [
@@ -381,8 +381,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [[
-                   InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-                   InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+                   InlineKeyboardButton('🆘🎬 Movies', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                   InlineKeyboardButton('🆘🎥 Series', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
 
@@ -431,8 +431,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [[
-                   InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-                   InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+                   InlineKeyboardButton('🆘🎬 Movies', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                   InlineKeyboardButton('🆘🎥 Series', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
         
@@ -448,7 +448,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🔗 Movie Hub', url=f'https://t.me/+Rw47iXFdBF84YTNl')
+            InlineKeyboardButton('🔗 It's Unique Movies', url=f'https://t.me/Its_unique_movies_adda')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('About 😎', callback_data='about')
@@ -499,7 +499,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Status', url='https://t.me/+tYcc1A2-W0ZhZTFl'),
+            InlineKeyboardButton('🤖 Status', url='https://t.me/+BixProBUQBo4MWM9'),
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('Close ❎', callback_data='close_data')
@@ -920,11 +920,11 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton("🎬 Movie", url="https://t.me/+8X7kGPo_fogzYTRl"),
-        InlineKeyboardButton("Series 🎥", url="https://t.me/+iVePgxkxvQ0yOTBl")
+        InlineKeyboardButton("🎬 Movies", url="https://t.me/+4yoDh0x8j80wOTVl"),
+        InlineKeyboardButton("Series 🎥", url="https://t.me/+oRO-NDOF4LU4ZjRl")
     ])
     btn.insert(0, [
-        InlineKeyboardButton("🔔 Join Our Channel 🔔",url="https://t.me/+tYcc1A2-W0ZhZTFl")
+        InlineKeyboardButton("🔔 Join Our Channel 🔔",url="https://t.me/+BixProBUQBo4MWM9")
     ])
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
