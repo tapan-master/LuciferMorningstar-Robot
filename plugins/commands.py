@@ -43,7 +43,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, Script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🔗 Movie Hub', url=f'https://t.me/+Rw47iXFdBF84YTNl')
+            InlineKeyboardButton('🔗 It's Unique Movies', url=f'https://t.me/Its_unique_movies_adda')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('About 😎', callback_data='about')
@@ -84,7 +84,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🔗 Movie Hub', url=f'https://t.me/+Rw47iXFdBF84YTNl')
+            InlineKeyboardButton('🔗 It's Unique Movies', url=f'https://t.me/Its_unique_movies_adda')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('About 😎', callback_data='about')
@@ -235,8 +235,8 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{files.file_name}"
     buttons = [[
-               InlineKeyboardButton('🆘👤 Owner', url='https://t.me/hellodragan'),
-               InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/hellodragan')
+               InlineKeyboardButton('🆘🎬 Movies', url='https://t.me/+4yoDh0x8j80wOTVl'),
+               InlineKeyboardButton('🆘🎥 Series', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                ],[
                InlineKeyboardButton('🗑 Close File', callback_data='close_data')
                ]]
